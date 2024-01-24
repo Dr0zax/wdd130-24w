@@ -1,0 +1,43 @@
+/*https://coolors.co/palette/006d77-83c5be-edf6f9-ffddd2-e29578*/
+
+body {
+    text-align: center;
+    background-color: #EDF6F9;
+}
+
+li {
+    list-style: none;
+    background-color: #006D77;
+}
+
+a {
+    color: #EDF6F9;
+    text-decoration: none;
+}
+
+#first-paragraph {
+    color: #EDF6F9;
+    background-color: #006D77;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#second-paragraph {
+    color: #EDF6F9;
+    background-color: #006D77;
+    font-size: 2em;
+}
+
+.other-paragraph {
+    color: #EDF6F9;
+    background-color: #006D77;
+    font-size: 1em;
+}
+
+#my-photo {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+}
