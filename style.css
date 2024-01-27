@@ -11,14 +11,19 @@ ul {
     border-radius: 0.5em;
 }
 
-li {
+li a {
     color: #EDF6F9;
     text-decoration: none;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 #about-me {
     background-color: #006D77;
+    border-radius: 0.5em;
+}
+
+#about-me a {
+    color: #FFDDD2;
     border-radius: 0.5em;
 }
 
