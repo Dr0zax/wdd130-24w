@@ -5,33 +5,37 @@ body {
     background-color: #EDF6F9;
 }
 
-li {
+ul {
     list-style: none;
     background-color: #006D77;
+    border-radius: 0.5em;
 }
 
-a {
+li {
     color: #EDF6F9;
     text-decoration: none;
+    font-size: 1.25em;
+}
+
+#about-me {
+    background-color: #006D77;
+    border-radius: 0.5em;
 }
 
 #first-paragraph {
     color: #EDF6F9;
-    background-color: #006D77;
     font-size: 3em;
     font-weight: bold;
 }
 
 #second-paragraph {
     color: #EDF6F9;
-    background-color: #006D77;
     font-size: 2em;
 }
 
 .other-paragraph {
     color: #EDF6F9;
-    background-color: #006D77;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 #my-photo {
@@ -39,5 +43,5 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
