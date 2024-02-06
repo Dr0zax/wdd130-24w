@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    background-color: aqua;
+    border: 10px solid blueviolet;
+    padding: 50px;
+    width: 400px;
+    margin: 20px auto;
+}
+
+
+img {
+    padding: 10px;
+    background-color: aqua ;
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    border: 10px solid black;
+}

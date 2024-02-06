@@ -1,116 +1,103 @@
-/*
-
---primary-color: #006D77;
---secondary-color: #83C5BE;
---accent1-color: #FFDDD2;
---accent2-color: white;
-
-*/
-
+:root {
+  --primary-color: #006d77;
+  --secondary-color: #83c5be;
+  --accent1-color: #ffddd2;
+  --accent2-color: white;
+}
 
 #content {
-    max-width: 1600px;
-    margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 nav a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
+  color: var(--accent2-color);
+  text-align: center;
+  text-decoration: none;
 }
 
-#hero-msg h1, #hero-msg h4 {
-    text-align:  center;
-}
-
-.button-box {
-    text-align: center;
-}
-
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
 main section {
-    text-align: center;
+  text-align: center;
 }
 
 #background {
-    height: 725px;
-    background-color: #83C5BE;
+  height: 725px;
+  background-color: var(--secondary-color);
 }
 
 body {
-    background-color: white;
+  background-color: var(--accent2-color);
 }
 
 header {
-    background-color: #006D77;
-}   
+  background-color: var(--primary-color);
+}
 
 nav a:hover {
-    color: #006D77;
-    background-color: #FFDDD2;
+  color: var(--primary-color);
+  background-color: var(--accent1-color);
 }
 
-.book, .join {
-    text-decoration: none;
-    color: black;
-    background-color: #83C5BE;
+.book,
+.join {
+  text-decoration: none;
+  color: black;
+  background-color: var(--secondary-color);
 }
 
-.book:hover, .join:hover {
-    color: #006D77;
-    background-color: #FFDDD2;
+.book:hover,
+.join:hover {
+  color: var(--primary-color);
+  background-color: #ffddd2;
 }
 
 .msg {
-    background-color: #006D77;
+  background-color: var(--primary-color);
 }
 
+.msg p,
 .msg h2 {
-    color: white;
-}
-
-.msg p {
-    color: white;
+  color: var(--accent2-color);
 }
 
 footer {
-    color: white;
-    background-color: #006D77;
+  color: var(--accent2-color);
+  background-color: var(--primary-color);
 }
 
 footer a {
-    text-decoration: none;
-    color:  white;
+  text-decoration: none;
+  color: var(--accent2-color);
 }
 
 footer p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 footer p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 footer a:hover {
-    color: #FFDDD2;
+  color: var(--accent1-color);
 }
 
-.home-title {
-    color: #006D77;
-}
-
+.home-title,
 h4 {
-    color: #006D77;
+  color: var(--primary-color);
 }
 
 .icon {
-    width: 80px;
+  width: 80px;
 }
 
 .logo {
-    width: 80px;
+  width: 80px;
 }
 
 #hero-img {
-    width: 100%;
+  width: 100%;
 }
