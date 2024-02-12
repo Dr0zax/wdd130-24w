@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+#content {
+    background-color: #737373;
+    display: block;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#imgs {
+    box-sizing: border-box;
+}
+
+.rounded-img{
+    border-radius: 50%;
+    border: 15px solid #444444;
+    margin: 5%;
+    width: 20%;
+}
