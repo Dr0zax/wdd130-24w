@@ -1,39 +1,68 @@
-/*https://coolors.co/palette/006d77-83c5be-edf6f9-ffddd2-e29578*/
+/*https://coolors.co/4c5760-93a8ac-d7ceb2-a59e8c-66635b*/
+
+:root {
+    --primary-color: #4C5760;
+    --secondary-color: #93A8AC;
+    --accent1-color: #D7CEB2;
+    --accent2-color: white;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     text-align: center;
-    background-color: #EDF6F9;
+    background-color: var(--accent2-color);
 }
 
-ul {
-    list-style: none;
-    background-color: #006D77;
-    border-radius: 0.5em;
+nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
-li a {
-    color: #EDF6F9;
+nav a {
+    border-radius: 5px;
+    width: 290px;
+    color: var(--accent2-color);
     text-decoration: none;
     font-size: 1.5em;
+    transition: background-color .2s ease;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
 }
 
 #about-me {
+    margin: auto 20px;
     padding: 1em;
     display: flex;
-    flex-wrap: nowrap;
-    background-color: #006D77;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary-color);
     border-radius: 0.5em;
 }
 
 #about-me a {
-    color: #FFDDD2;
+    color: var(--accent1-color);
     border-radius: 0.5em;
 }
 
 #first-paragraph {
     margin-left: 50px;
     text-align: left;
-    color: #EDF6F9;
+    color: var(--accent2-color);
     font-size: 3em;
     font-weight: bold;
 }
