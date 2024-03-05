@@ -1,0 +1,52 @@
+body {
+    background-color: #1e1e1e;
+}
+
+#card {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1em;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#inner-container {
+    padding: 0 50px;
+}
+
+img {
+    width: 100%;
+}
+
+#age {
+    color: #3f5b8b;
+    margin-bottom: 0px;
+}
+
+#main-text {
+    color: #a097a0;
+}
+
+#card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info {
+    background-color: #3f5b8b;
+    color: white;
+    border: 1px solid grey;
+}
+
+.info h2 {
+    margin-bottom: 0px;
+}
+
+.info p {
+    margin-top: 0px;
+}
+
+h1 {
+    margin-top: 0px;
+}
