@@ -97,4 +97,8 @@ main {
     nav {
         flex-direction: column;
     }
+
+    #about-me p {
+        font-size: 2em;
+    }
 }
