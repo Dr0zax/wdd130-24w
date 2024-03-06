@@ -1,11 +1,16 @@
 /*https://coolors.co/4c5760-93a8ac-d7ceb2-a59e8c-66635b*/
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary-color: #4C5760;
     --secondary-color: #93A8AC;
     --accent1-color: #D7CEB2;
     --accent2-color: white;
+}
 
+* {
+    box-sizing: border-box;
 }
 
 html, body {
@@ -16,40 +21,52 @@ html, body {
 body {
     text-align: center;
     background-color: var(--accent2-color);
+    font-family: "Noto Sans Display", Arial, Helvetica, sans-serif;
 }
 
 nav {
-    padding: 10px;
+    padding: 25px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--primary-color);
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
 nav a {
     border-radius: 5px;
-    width: 290px;
     color: var(--accent2-color);
     text-decoration: none;
     font-size: 1.5em;
     transition: background-color .2s ease;
+    padding: 10px;
 }
 
 nav a:hover {
     background-color: var(--secondary-color);
 }
 
-#about-me {
-    margin: auto 20px;
+main {
     padding: 1em;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 10px;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#headline {
+    margin: 100px;
+}
+
+#about-me {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
     align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
     background-color: var(--primary-color);
     border-radius: 0.5em;
 }
@@ -59,19 +76,18 @@ nav a:hover {
     border-radius: 0.5em;
 }
 
-#first-paragraph {
-    margin-left: 50px;
+#about-me p {
     text-align: left;
     color: var(--accent2-color);
     font-size: 3em;
     font-weight: bold;
+    margin: 20px;
 }
 
 #my-photo {
-    width: 50%;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0.5em;
-    box-shadow: 2px 2px 2px black;
 }
