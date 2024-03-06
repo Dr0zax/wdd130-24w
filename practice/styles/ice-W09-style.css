@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 body {
     background-color: #1e1e1e;
+    font-family: "roboto slab", verdana, serif;
 }
 
 #card {
@@ -12,7 +15,7 @@ body {
 }
 
 #inner-container {
-    padding: 0 50px;
+    padding: 0 35px;
 }
 
 img {
@@ -37,9 +40,10 @@ img {
     background-color: #3f5b8b;
     color: white;
     border: 1px solid grey;
+    font-family: serif;
 }
 
-.info h2 {
+.info h3 {
     margin-bottom: 0px;
 }
 
