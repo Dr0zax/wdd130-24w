@@ -38,7 +38,6 @@ section#product-grid {
 
 .card button {
     width: 100%;
-    padding: 5px 0;
 }
 
 nav {
@@ -58,6 +57,23 @@ nav li {
     padding-bottom: 0.5em;
 }
 nav li a {
-
     text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    section#product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:400px) {
+    section#product-grid {
+        grid-template-columns: 1fr;
+    }
 }

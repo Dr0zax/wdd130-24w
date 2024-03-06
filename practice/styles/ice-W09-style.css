@@ -3,18 +3,37 @@
 body {
     background-color: #1e1e1e;
     font-family: "roboto slab", verdana, serif;
+
+    margin: 0;
+    padding: 0;
 }
 
-#card {
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.card {
     background-color: white;
     overflow: hidden;
     border-radius: 1em;
     width: 300px;
     margin: 0 auto;
     text-align: center;
+    transition: transform .5s ease;
 }
 
-#inner-container {
+.card:hover {
+    transform: scale(1.1);
+}
+
+.inner-container {
     padding: 0 35px;
 }
 
@@ -22,33 +41,43 @@ img {
     width: 100%;
 }
 
-#age {
+.age {
     color: #3f5b8b;
     margin-bottom: 0px;
 }
 
-#main-text {
+.main-text {
     color: #a097a0;
 }
 
-#card-info {
+.card-info {
+    background-color: gray;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
 }
 
 .info {
     background-color: #3f5b8b;
     color: white;
-    border: 1px solid grey;
-    font-family: serif;
-}
-
-.info h3 {
-    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
 }
 
 .info p {
-    margin-top: 0px;
+    margin: 0;
+}
+
+.info sup {
+    font-size: .7em;
+}
+
+.metric {
+    font-size: 1.5em;
+}
+
+.info-text {
+    font-size: .75em;
 }
 
 h1 {

@@ -57,10 +57,6 @@ main {
     margin: 0 auto;
 }
 
-#headline {
-    margin: 100px;
-}
-
 #about-me {
     display: flex;
     align-items: center;
