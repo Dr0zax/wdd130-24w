@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        label, input, textarea, button {
+            width: 200px;
+            display: block;
+        }
+
+        input, textarea {
+            margin-bottom: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Questions</h1>
+    <form action="thankyou.html">
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" placeholder="John" name="fname">
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" placeholder="Doe" name="lname">
+        <label for="question">Question</label>
+        <textarea name="question" id="question" placeholder="Enter your question here"></textarea>
+        <button type="submit">Ask away</button>
+    </form>
+</body>
+</html>
