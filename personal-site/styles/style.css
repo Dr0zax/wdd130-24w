@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Urbanist:ital@0;1&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #3b4252;
+  --secondary-color: #81A1C1;
+  --accent1-color: #8fbcbb;
+  --accent2-color: #E5E9F0;
+}
+
