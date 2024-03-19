@@ -198,7 +198,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 5px 50px;
+  padding: 5px 20px;
   padding-left: 100px;
   /* margin-top: 100px; */
   background-color: var(--primary-color);
@@ -207,15 +207,17 @@ footer {
 footer p, footer a {
   color: var(--accent2-color);
   text-decoration: none;
+  margin: 0;
 }
 
 #social-media a {
   padding: 0;
-  width: 50px;
+  /* width: 20px; */
 }
 
 #social-media img {
   padding-top: 5px;
+  width: 35px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -224,10 +226,6 @@ footer p, footer a {
     animation: slideInTop .5s ease;
     width: 100%;
     position: relative;
-  }
-
-  #about-me {
-    text-align: left;
   }
 
   #logo-link img {
@@ -263,16 +261,17 @@ footer p, footer a {
   footer {
     position: relative;
     margin-top: 100px;
-    padding: 10px;
+    padding: 20px;
   }
 
   #social-media {
     display: flex;
     flex-direction: row;
+    gap: 10px;
   }
   
   #social-media img {
-    width: 100%;
+    width: 50px;
   }
   
   #links {
