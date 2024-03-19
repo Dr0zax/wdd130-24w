@@ -115,6 +115,7 @@ header {
   margin-left: 100px;
   padding: 20px 100px;
   animation: fadeIn 0.5s ease;
+  margin-bottom: 100px;
 }
 
 #inner-content {
@@ -225,14 +226,19 @@ footer p, footer a {
     position: relative;
   }
 
+  #about-me {
+    text-align: left;
+  }
+
   #logo-link img {
     width: 60px;
+    margin-right: 5px;
   }
 
   #sidebar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
   }
 
