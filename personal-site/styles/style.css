@@ -267,11 +267,11 @@ footer p, footer a {
   #social-media {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
   }
   
   #social-media img {
-    width: 50px;
+    width: 35px;
   }
   
   #links {
