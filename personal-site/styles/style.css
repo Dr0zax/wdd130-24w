@@ -6,6 +6,8 @@
   --accent1-color: #8fbcbb;
   --accent2-color: #E5E9F0;
 
+  /* --primary-color-tranpsarent: #3b4252e6; */
+
   --heading-font: "Urbanist", Verdana, sans-serif;
   --paragraph-font: "Dosis", Helvetica, sans-serif;
 
@@ -121,13 +123,13 @@ header {
 #inner-content {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
-  
+  height: 400px;
 }
 
 #about-me {
-  text-align: center;
+  text-align: left;
 } 
 
 #about-me p {
@@ -142,24 +144,29 @@ header {
 
 #imgs {
   display: flex;
+  justify-content: space-around;
   gap: 20px;
+  width: 100%;
 }
 
 #imgs img {
-  width: 300px;
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  object-position: 50% 0%;
 }
 
 #imgs img:hover {
   object-fit: contain;
+  object-position: 50% 50%;
+
 }
 
 #links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 #links a {
@@ -190,10 +197,13 @@ header {
 
 p, a {
   font-family: var(--paragraph-font);
+  line-height: 31px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
+  line-height: 31px;
+  letter-spacing: -1px;
 }
 
 footer {
@@ -231,12 +241,20 @@ footer p a:hover {
   width: 35px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   header {
     height: auto;
     animation: slideInTop .5s ease;
     width: 100%;
-    position: relative;
+    position: fixed;
+    /* background-color: var(--primary-color-tranpsarent); */
+    /* backdrop-filter: blur(10px) saturate(80%); */
+    z-index: 100;
+  }
+
+  #logo-link {
+    display: grid;
+    align-items: center;
   }
 
   #logo-link img {
@@ -256,12 +274,17 @@ footer p a:hover {
     margin-left: 0;
   }
 
+  #about-me {
+    margin-top: 60px;
+  }
+
   #inner-content {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    height: auto;
   }
-
+  
   #imgs {
     flex-direction: column;
   }
@@ -301,5 +324,6 @@ footer p a:hover {
 
   #links {
     width: 100%;
+    gap: 20px;
   }
 }
