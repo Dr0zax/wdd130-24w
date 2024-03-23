@@ -153,7 +153,7 @@ header {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
-  object-position: 50% 0%;
+  object-position: 50% 50%;
 }
 
 #imgs img:hover {
