@@ -156,11 +156,10 @@ header {
   object-position: 50% 50%;
 }
 
-#imgs img:hover {
+/* #imgs img:hover {
   object-fit: contain;
   object-position: 50% 50%;
-
-}
+} */
 
 #links {
   display: flex;
