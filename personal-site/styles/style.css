@@ -5,21 +5,10 @@
   --secondary-color: #81A1C1;
   --accent1-color: #8fbcbb;
   --accent2-color: #E5E9F0;
-
-  /* --primary-color-tranpsarent: #3b4252e6; */
+  --dark-color: #2e3440;
 
   --heading-font: "Urbanist", Verdana, sans-serif;
   --paragraph-font: "Dosis", Helvetica, sans-serif;
-
-  --headline-color-on-white: #3b4252;  /* headlines on a white background */ 
-  --headline-color-on-color: #E5E9F0; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #3b4252; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #E5E9F0; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #3b4252;
-  --nav-link-color: #3b4252;
-  --nav-background-color: #8fbcbb;
-  --nav-hover-link-color: #E5E9F0;
-  --nav-hover-background-color: #3b4252;
 }
 
 @keyframes slideInLeft {
@@ -62,9 +51,24 @@ html, body {
   padding: 0;
 }
 
+
+[data-theme="light"] {
+  --background-color: white;
+  --font-color: var(--primary-color);
+  transition: 500ms ease;
+}
+
+[data-theme="dark"] {
+  --background-color: #2e3440;
+  --font-color: var(--accent2-color);
+  transition: 500ms ease;
+}
+
 body {
   font-size: 21px;
   text-align: center;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 header {
@@ -73,6 +77,7 @@ header {
   width: 100px;
   background-color: var(--primary-color);
   animation: slideInLeft .5s ease;
+  z-index: 2;
 }
 
 #logo-link img {
@@ -109,6 +114,27 @@ header {
 
 .nav-link:hover:not(#active) {
   background-color: var(--secondary-color);
+}
+
+#theme-switcher img {
+  width: 100%;
+}
+
+#theme-switcher {
+  position: absolute;
+  background-color: var(--primary-color);
+  border: none;
+  width: 35px;
+  /* padding: 20px; */
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: background-color 100ms ease;
+}
+
+#theme-switcher:hover {
+  background-color: #81A1C1;
 }
 
 #content {
