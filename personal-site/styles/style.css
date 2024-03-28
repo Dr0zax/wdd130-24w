@@ -55,13 +55,13 @@ html, body {
 [data-theme="light"] {
   --background-color: white;
   --font-color: var(--primary-color);
-  transition: 500ms ease;
+  /* transition: 500ms ease; */
 }
 
 [data-theme="dark"] {
   --background-color: #2e3440;
   --font-color: var(--accent2-color);
-  transition: 500ms ease;
+  /* transition: 500ms ease; */
 }
 
 body {
